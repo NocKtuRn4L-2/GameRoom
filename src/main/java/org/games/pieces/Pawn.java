@@ -1,6 +1,7 @@
 package org.games.pieces;
 
 public class Pawn extends Piece{
+
     public Pawn(boolean isWhite) {
         super(isWhite);
     }

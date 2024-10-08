@@ -4,20 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa173800-b747-481f-9c67-a52dcfd7ef3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/games/logic/ChessGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/games/logic/GameManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/games/pieces/Pawn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/games/pieces/Piece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/games/ui/ChessBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/games/ui/GameWindow.java" afterDir="false" />
+    <list default="true" id="aa173800-b747-481f-9c67-a52dcfd7ef3b" name="Changes" comment="Created Basics for Chess Game&#10;-Room for improvement&#10;-Could implement other board based games">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/games/ai/StockfishAI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/games/pieces/Bishop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/games/pieces/King.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/games/pieces/Knight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/games/pieces/Queen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/games/pieces/Rook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/games/logic/ChessGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/games/logic/ChessGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/games/logic/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/games/logic/GameManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/games/pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/games/pieces/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/games/ui/ChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/games/ui/ChessBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/games/ui/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/games/ui/GameWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="Class" />
       </list>
     </option>
@@ -34,9 +35,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;NocKtuRn4L-2&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/NocKtuRn4L-2/GameRoom.git&quot;,
+    &quot;accountId&quot;: &quot;dde21e28-167f-4340-a42d-1efcd1d21fa6&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2n8BxZ8DQ3fzi022P0xjKj6plqw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -77,8 +93,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728345070128</updated>
-      <workItem from="1728345071174" duration="4141000" />
+      <workItem from="1728345071174" duration="6243000" />
+      <workItem from="1728351329053" duration="7854000" />
     </task>
+    <task id="LOCAL-00001" summary="Created Basics for Chess Game&#10;-Room for improvement&#10;-Could implement other board based games">
+      <option name="closed" value="true" />
+      <created>1728349355648</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728349355648</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Created Basics for Chess Game&#10;-Room for improvement&#10;-Could implement other board based games">
+      <option name="closed" value="true" />
+      <created>1728349508117</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728349508117</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +128,30 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created Basics for Chess Game&#10;-Room for improvement&#10;-Could implement other board based games" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Basics for Chess Game&#10;-Room for improvement&#10;-Could implement other board based games" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/games/logic/ChessGame.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/games/logic/GameManager.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/games/ai/StockfishAI.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
