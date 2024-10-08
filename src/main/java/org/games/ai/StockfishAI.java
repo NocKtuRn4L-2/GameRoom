@@ -19,6 +19,7 @@ public class StockfishAI {
         outputStream.write("uci\n".getBytes());
         outputStream.flush();
         System.out.println("Stockfish started");
+        close();
     }
 
     public void close() throws IOException {
