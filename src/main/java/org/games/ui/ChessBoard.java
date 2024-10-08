@@ -44,41 +44,50 @@ public class ChessBoard extends JPanel {
             for (int col = 0; col < SIZE; col++) {
                 Piece piece = board[row][col];
                 if (piece != null) {
-                    if (piece instanceof Pawn) {
-                        if (piece.isWhite()) {
-                            drawPiece(g, "white_pawn", row, col);
-                        } else {
-                            drawPiece(g, "black_pawn", row, col);
+                    switch (piece) {
+                        case Pawn pawn -> {
+                            if (piece.isWhite()) {
+                                drawPiece(g, "white_pawn", row, col);
+                            } else {
+                                drawPiece(g, "black_pawn", row, col);
+                            }
                         }
-                    } else if (piece instanceof Rook) {
-                        if (piece.isWhite()) {
-                            drawPiece(g, "white_rook", row, col);
-                        } else {
-                            drawPiece(g, "black_rook", row, col);
+                        case Rook rook -> {
+                            if (piece.isWhite()) {
+                                drawPiece(g, "white_rook", row, col);
+                            } else {
+                                drawPiece(g, "black_rook", row, col);
+                            }
                         }
-                    } else if (piece instanceof Knight) {
-                        if (piece.isWhite()) {
-                            drawPiece(g, "white_knight", row, col);
-                        } else {
-                            drawPiece(g, "black_knight", row, col);
+                        case Knight knight -> {
+                            if (piece.isWhite()) {
+                                drawPiece(g, "white_knight", row, col);
+                            } else {
+                                drawPiece(g, "black_knight", row, col);
+                            }
                         }
-                    } else if (piece instanceof Bishop) {
-                        if (piece.isWhite()) {
-                            drawPiece(g, "white_bishop", row, col);
-                        } else {
-                            drawPiece(g, "black_bishop", row, col);
+                        case Bishop bishop -> {
+                            if (piece.isWhite()) {
+                                drawPiece(g, "white_bishop", row, col);
+                            } else {
+                                drawPiece(g, "black_bishop", row, col);
+                            }
                         }
-                    } else if (piece instanceof Queen) {
-                        if (piece.isWhite()) {
-                            drawPiece(g, "white_queen", row, col);
-                        } else {
-                            drawPiece(g, "black_queen", row, col);
+                        case Queen queen -> {
+                            if (piece.isWhite()) {
+                                drawPiece(g, "white_queen", row, col);
+                            } else {
+                                drawPiece(g, "black_queen", row, col);
+                            }
                         }
-                    } else if (piece instanceof King) {
-                        if (piece.isWhite()) {
-                            drawPiece(g, "white_king", row, col);
-                        } else {
-                            drawPiece(g, "black_king", row, col);
+                        case King king -> {
+                            if (piece.isWhite()) {
+                                drawPiece(g, "white_king", row, col);
+                            } else {
+                                drawPiece(g, "black_king", row, col);
+                            }
+                        }
+                        default -> {
                         }
                     }
                 }

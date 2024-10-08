@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa173800-b747-481f-9c67-a52dcfd7ef3b" name="Changes" comment="Improved Proof of Concept">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/games/ai/StockfishAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/games/ai/StockfishAI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/games/logic/ChessGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/games/logic/ChessGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/games/logic/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/games/logic/GameManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728345070128</updated>
       <workItem from="1728345071174" duration="6243000" />
-      <workItem from="1728351329053" duration="8202000" />
+      <workItem from="1728351329053" duration="13685000" />
     </task>
     <task id="LOCAL-00001" summary="Created Basics for Chess Game&#10;-Room for improvement&#10;-Could implement other board based games">
       <option name="closed" value="true" />
@@ -116,7 +119,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728359841510</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Improved Proof of Concept">
+      <option name="closed" value="true" />
+      <created>1728359948194</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728359948194</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,11 +152,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/games/logic/ChessGame.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/games/logic/GameManager.java</url>
           <line>16</line>

@@ -18,11 +18,57 @@ public class StockfishAI {
         outputStream = stockfishProcess.getOutputStream();
         outputStream.write("uci\n".getBytes());
         outputStream.flush();
-        System.out.println("Stockfish started");
-        close();
+        // Read and print Stockfish's response
+        String line;
+        while ((line = inputReader.readLine()) != null) {
+
+            if (line.equals("uciok")) {
+                System.out.println("Stockfish: " + line);
+                break;  // Stop reading when Stockfish signals that it is ready
+            }
+        }
+
+        System.out.println("Stockfish: initialized");
+
+        // Close streams and process when done
     }
 
     public void close() throws IOException {
-        stockfishProcess.destroy();
+        try {
+            if (inputReader != null) {
+                inputReader.close();
+            }
+            if (outputStream != null) {
+                outputStream.close();
+            }
+            if (stockfishProcess != null) {
+                stockfishProcess.destroy();  // Terminate the Stockfish process
+            }
+            System.out.println("Stockfish closed");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public String getBestMove(String fen) throws IOException {
+        // Send the position in FEN format
+        outputStream.write(("position fen " + fen + "\n").getBytes());
+        outputStream.flush();
+
+        // Request the best move
+        outputStream.write("go depth 5\n".getBytes());
+        outputStream.flush();
+
+        // Read the response until we find the best move
+        String bestMove = null;
+        String line;
+        while ((line = inputReader.readLine()) != null) {
+            if (line.startsWith("bestmove")) {
+                bestMove = line.split(" ")[1];  // Extract the move from the response
+                break;
+            }
+        }
+
+        return bestMove;  // Return the best move found
     }
 }

@@ -73,6 +73,7 @@ public class GameManager {
 
     public void printBoard() {
         for (int row = 0; row < 8; row++) {
+            System.out.print((row+1) + " ");
             for (int col = 0; col < 8; col++) {
                 if (board[row][col] != null) {
                     if (board[row][col] instanceof Pawn) {
@@ -99,5 +100,21 @@ public class GameManager {
             }
             System.out.println();
         }
+    }
+
+    public String getBestMoveAI(String fen) throws IOException {
+        return stockfishAI.getBestMove(fen);
+    }
+
+    public void exitGame() {
+        if (stockfishAI != null) {
+            try {
+                stockfishAI.close();  // Close the Stockfish AI
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        // Perform any other cleanup needed for the game
+        System.out.println("Game exited.");
     }
 }
