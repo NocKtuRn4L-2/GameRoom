@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa173800-b747-481f-9c67-a52dcfd7ef3b" name="Changes" comment="Improved Proof of Concept">
+    <list default="true" id="aa173800-b747-481f-9c67-a52dcfd7ef3b" name="Changes" comment="Made Stockfish respond with first best move">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/games/ai/StockfishAI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/games/ai/StockfishAI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/games/logic/ChessGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/games/logic/ChessGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/games/logic/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/games/logic/GameManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +37,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -53,6 +51,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.ChessGame.executor": "Run",
+    "Maven.2dChess [clean].executor": "Run",
+    "Maven.2dChess [compile].executor": "Run",
+    "Maven.2dChess [install].executor": "Run",
+    "Maven.2dChess [package].executor": "Run",
+    "Maven.2dChess [verify].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -62,9 +65,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -85,7 +89,9 @@
       <option name="presentableId" value="Default" />
       <updated>1728345070128</updated>
       <workItem from="1728345071174" duration="6243000" />
-      <workItem from="1728351329053" duration="13685000" />
+      <workItem from="1728351329053" duration="17299000" />
+      <workItem from="1728369081699" duration="38000" />
+      <workItem from="1728369164335" duration="2170000" />
     </task>
     <task id="LOCAL-00001" summary="Created Basics for Chess Game&#10;-Room for improvement&#10;-Could implement other board based games">
       <option name="closed" value="true" />
@@ -127,7 +133,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728359948194</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Made Stockfish respond with first best move">
+      <option name="closed" value="true" />
+      <created>1728365488747</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728365488747</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Made Stockfish respond with first best move">
+      <option name="closed" value="true" />
+      <created>1728365560680</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728365560680</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +169,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created Basics for Chess Game&#10;-Room for improvement&#10;-Could implement other board based games" />
     <MESSAGE value="Improved Proof of Concept" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved Proof of Concept" />
+    <MESSAGE value="Made Stockfish respond with first best move" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Stockfish respond with first best move" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

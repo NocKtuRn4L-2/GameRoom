@@ -23,7 +23,7 @@ public class ChessGame {
             System.out.println("\nMove black pawn from (7, 0) to (6, 0): " + moved);
             gameManager.printBoard();
 
-            String fen = "rnbqkbnr/1ppppppp/p7/P7/8/8/1PPPPPPP/RNBQKBNR w KQkq - 0 1";
+            String fen = "rnbqkbnr/1ppppppp/p7/8/P7/8/1PPPPPPP/RNBQKBNR w KQkq - 0 1";
             String bestMove;
             bestMove = gameManager.getBestMoveAI(fen);
             System.out.println("\nBest move: " + bestMove);
