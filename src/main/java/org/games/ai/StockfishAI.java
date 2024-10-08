@@ -18,7 +18,6 @@ public class StockfishAI {
         outputStream = stockfishProcess.getOutputStream();
         outputStream.write("uci\n".getBytes());
         outputStream.flush();
-        System.out.println(stockfishProcess.toString());
         System.out.println("Stockfish started");
     }
 
